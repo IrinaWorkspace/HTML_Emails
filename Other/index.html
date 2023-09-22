@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="max-width: 600px; margin: 0 auto"
+    >
+      <tr>
+        <td width="33.33%" style="vertical-align: top">
+          <table
+            width="100%"
+            border="0"
+            cellpadding="10"
+            cellspacing="0"
+            style="background-color: #f2f2f2"
+          >
+            <tr>
+              <td>
+                <p>Row 1 - Content</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width="33.33%" style="vertical-align: top">
+          <table
+            width="100%"
+            border="0"
+            cellpadding="10"
+            cellspacing="0"
+            style="background-color: #e6e6e6"
+          >
+            <tr>
+              <td>
+                <p>Row 2 - Content</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width="33.33%" style="vertical-align: top">
+          <table
+            width="100%"
+            border="0"
+            cellpadding="10"
+            cellspacing="0"
+            style="background-color: #d9d9d9"
+          >
+            <tr>
+              <td>
+                <p>Row 3 - Content</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* CSS for desktop screens */
+      .responsive-table {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .table-row {
+        display: flex;
+      }
+
+      .table-cell {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      /* CSS for mobile screens */
+      @media (max-width: 600px) {
+        .table-row {
+          width: 100% !important;
+          flex-direction: column !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive-table">
+      <div class="table-row">
+        <div class="table-cell">
+          <p>Row 1 - Content</p>
+        </div>
+        <div class="table-cell">
+          <p>Row 2 - Content</p>
+        </div>
+        <div class="table-cell">
+          <p>Row 3 - Content</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
