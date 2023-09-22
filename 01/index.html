@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 Template</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 0;
+      }
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: #bb1515;
+        font-size: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2%;
+        color: rgb(42, 41, 41);
+      }
+
+      #wrapper {
+        margin: 0 auto;
+        background-color: #fff;
+      }
+      h2 {
+        padding-left: 2%;
+        letter-spacing: 1%;
+        font-weight: 700;
+      }
+      header {
+        /* display: flex;
+        justify-content: space-between; */
+        /* padding: 2%; */
+        width: 98%;
+      }
+
+      #logo {
+        float: left;
+        margin: 2% 0 0 5%;
+        max-width: 220px;
+      }
+
+      #callout {
+        float: right;
+        margin: 3% 3% 2% 0;
+        height: auto;
+        overflow: hidden;
+      }
+      P {
+        padding: 2%;
+        text-align: justify;
+      }
+      .banner {
+        width: 96%;
+        margin: 0 auto;
+      }
+      .banner img {
+        width: 100%;
+        margin-bottom: 2rem;
+        border-radius: 14px;
+      }
+
+      .line {
+        clear: both;
+        margin: 4% auto;
+        width: 90%;
+        background-color: #e3e9e9;
+        height: 2px;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline;
+      }
+
+      li img {
+        max-width: 32px;
+      }
+      .button-holder {
+        padding: 2%;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        float: right;
+        border-radius: 8px;
+        color: #ee3b3b;
+        font-weight: 600;
+        background: rgb(6, 6, 6);
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      .contact {
+        text-align: center;
+        margin-bottom: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="logo">
+          <img
+            src="https://www.dnevnik.bg/images/layout/logo-dnevnik.png"
+            alt="logo-dnevnik"
+            style="background-color: black; max-width: 150px; padding: 8px"
+          />
+        </div>
+        <div id="callout">
+          <ui class="social">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png"
+                  alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="www.linkedin.com" target="_blank"
+                ><img
+                  src="data:image/png;base64,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"
+                  alt="linkedin"
+              /></a>
+            </li>
+          </ui>
+        </div>
+      </header>
+
+      <div class="banner">
+        <img
+          src="https://img.dnevnik.bg/shimg/dx460y260_4531138.jpg"
+          alt="banner"
+        />
+      </div>
+      <h2>
+        Българите, които ще бъдат обвинени в шпионаж в Лондон, станаха петима
+      </h2>
+      <p>
+        Британската прокуратура съобщи днес, че е решено да бъдат повдигнати
+        обвинения срещу петима български граждани заради това, че са шпионирали
+        за Русия в продължение на почти три години.
+      </p>
+      <p>
+        Трима мъже и две жени са обвинени в "заговор за събиране на информация,
+        предназначена директно или косвено да бъде използвана от враг" във
+        времето между 30 август 2020 г. и 8 февруари 2023 г., посочва Кралската
+        прокурорска служба (CPS).
+      </p>
+      <div class="button-holder">
+        <a class="btn" href="#">Learn more</a>
+      </div>
+      <div class="line"></div>
+      <p class="contact">
+        Dnevnik
+        <br />
+        tel 0011223366
+        <br />
+        adress kiodk. nsnns
+        <br />
+        email: dnev@abv.bg
+      </p>
+    </div>
+  </body>
+</html>
