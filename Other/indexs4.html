@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      CSS for desktop screens
+      .responsive-tables {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .table {
+        flex: 1;
+        margin: 10px;
+      }
+
+      CSS for mobile screens
+      @media (max-width: 400px) {
+        .responsive-tables {
+          flex-direction: column;
+        }
+
+        .table {
+          flex: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive-tables">
+      <table class="table" border="1">
+        <tr>
+          <th>Table 1</th>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+        </tr>
+      </table>
+
+      <table class="table" border="1">
+        <tr>
+          <th>Table 2</th>
+        </tr>
+        <tr>
+          <td>Content 2</td>
+        </tr>
+      </table>
+
+      <table class="table" border="1">
+        <tr>
+          <th>Table 3</th>
+        </tr>
+        <tr>
+          <td>Content 3</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        display: flex;
+      }
+      /* CSS for desktop screens */
+      .responsive-table {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .responsive-table table {
+        width: 100%;
+      }
+
+      /* CSS for mobile screens */
+      @media (max-width: 400px) {
+        .responsive-table table {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive-table">
+      <table border="1">
+        <tr>
+          <th>Table 1</th>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <th>Table 2</th>
+        </tr>
+        <tr>
+          <td>Content 2</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <th>Table 3</th>
+        </tr>
+        <tr>
+          <td>Content 3</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
