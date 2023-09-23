@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0 !important;
+        padding: 0;
+        background-color: orangered;
+      }
+      table {
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #333333;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      .webkit {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .outer {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        background-color: #ffffff;
+      }
+
+      .full-width-image img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+      .inner {
+        padding: 10px;
+      }
+      p {
+        margin: 0;
+        line-height: 1.3rem;
+      }
+      a {
+        color: #ee6a56;
+        text-decoration: underline;
+      }
+      .h1 {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 18px;
+      }
+      .h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      /* One column layout */
+      .one-column .contents {
+        text-align: left;
+      }
+      .one-column p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      /*Two column layout*/
+      .two-column {
+        text-align: center;
+        font-size: 0;
+      }
+
+      .two-column .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .contents {
+        width: 100%;
+      }
+      .two-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .two-column img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+      }
+      .two-column .text {
+        padding-top: 10px;
+      }
+
+      /*Three column layout*/
+      .three-column {
+        text-align: center;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .three-column .column {
+        width: 100%;
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .three-column .contents {
+        font-size: 14px;
+        text-align: center;
+      }
+      .three-column img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+      }
+      .three-column .text {
+        padding-top: 10px;
+      }
+      /* Left sidebar layout */
+      .left-sidebar {
+        text-align: center;
+        font-size: 0;
+        background-color: #1d0a01;
+      }
+      .left-sidebar .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .left-sidebar .left {
+        max-width: 100px;
+      }
+      .left-sidebar .right {
+        max-width: 500px;
+      }
+      .left-sidebar .img {
+        width: 100%;
+        max-width: 80px;
+        height: auto;
+      }
+      .left-sidebar .contents {
+        font-size: 14px;
+        text-align: center;
+        color: #ffffff90;
+      }
+      .left-sidebar a {
+        color: #85ab70;
+      }
+      /* Right sidebar layout */
+      .right-sidebar {
+        text-align: center;
+        font-size: 0;
+        background-color: #000000;
+      }
+      .right-sidebar .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .right-sidebar .left {
+        max-width: 100px;
+      }
+      .right-sidebar .right {
+        max-width: 500px;
+      }
+      .right-sidebar .img {
+        width: 100%;
+        max-width: 80px;
+        height: auto;
+      }
+      .right-sidebar .contents {
+        font-size: 12px;
+        text-align: right;
+        color: #ffffff80;
+      }
+      .right-sidebar a {
+        color: #70bbd9;
+      }
+      /*Media Queries*/
+      @media screen and (max-width: 400px) {
+        .two-column .column,
+        .three-column .column {
+          max-width: 100% !important;
+        }
+        .two-column img {
+          max-width: 100% !important;
+        }
+        .three-column img {
+          max-width: 50% !important;
+        }
+      }
+      @media screen and (min-width: 401px) and (max-width: 620px) {
+        .three-column .column {
+          max-width: 33% !important;
+        }
+        .two-column .column {
+          max-width: 50% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <div class="webkit">
+        <!--[if (gte mso 9)|(IE)]>
+      <table width="600" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+        <table class="outer" align="center">
+          <tr>
+            <td class="full-width-image">
+              <img
+                src="https://images.pexels.com/photos/382177/pexels-photo-382177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                width="600"
+                alt="blue sky banner by Jahoo Clouseau pexels"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner contents">
+                    <p class="h1">
+                      Email template works without messy @media queries
+                    </p>
+                    <p>
+                      Creating a Future-Proof Responsive Email Without Media
+                      Queries <br />
+                      If you like to know how this email template works, please
+                      visit full free email template tutorial on
+                      <a
+                        href="https://webdesign.tutsplus.com/tutorials/creating-a-future-proof-responsive-email-without-media-queries--cms-23919"
+                        target="_blank"
+                        >Tutsplus tutorials</a
+                      >. Get out there and try to experiment with the table
+                      layouts.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="two-column">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="50%" valign="top">
+              <![endif]-->
+              <div class="column">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img
+                              src="https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                              alt="forest pexels"
+                              width="300"
+                              alt=""
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            Choose your image <i>carefully</i>, pay attention to
+                            the size and avoid stretching it. There are a lot of
+                            free images available on
+                            <a href="https://www.pexels.com/" target="_blank"
+                              >pexels</a
+                            >
+                            website and other sites.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              <div class="column">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img
+                              src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                              alt="Germany water"
+                              width="220"
+                              alt=""
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            It is good practise to add links over your images so
+                            it's easy to click. Avoid loading too many and too
+                            tiny objects.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+          <tr>
+            <td class="three-column">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="200" valign="top">
+              <![endif]-->
+              <div class="column">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img
+                              src="https://images.pexels.com/photos/1088291/pexels-photo-1088291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                              alt="Conwy UK free photo pexels"
+                              width="180"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            Scelerisque congue eros eu posuere. Praesent in
+                            felis ut velit pretium lobortis rhoncus ut erat.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="200" valign="top">
+              <![endif]-->
+              <div class="column">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img
+                              src="https://images.pexels.com/photos/546913/pexels-photo-546913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                              alt="bridge walk"
+                              width="180"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            Scelerisque congue eros eu posuere. Praesent in
+                            felis ut velit pretium lobortis rhoncus ut erat.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="200" valign="top">
+              <![endif]-->
+              <div class="column">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img
+                              src="https://images.pexels.com/photos/1088291/pexels-photo-1088291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                              alt="Conwy UK free photo pexels"
+                              width="180"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            Scelerisque congue eros eu posuere. Praesent in
+                            felis ut velit pretium lobortis rhoncus ut erat.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+          <tr>
+            <td class="left-sidebar">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="100">
+              <![endif]-->
+              <div class="column left">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <img
+                        src="https://images.pexels.com/photos/416105/pexels-photo-416105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        width="80"
+                        alt="bird"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]></td><td width="500"><![endif]-->
+              <div class="column right">
+                <table width="100%">
+                  <tr>
+                    <td class="inner contents">
+                      Text size should be no smaller than 14px because we love
+                      to read it on our phones without zooming it. This can be
+                      your colourfull link to <a href="#">read and share</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+          <tr>
+            <td class="right-sidebar" dir="rtl">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%" dir="rtl">
+              <tr>
+              <td width="100">
+              <![endif]-->
+              <div class="column left" dir="ltr">
+                <table width="100%">
+                  <tr>
+                    <td class="inner contents">
+                      <img
+                        src="https://images.pexels.com/photos/64272/blossom-bloom-flower-red-64272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        width="80"
+                        alt="red flower"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]></td><td width="500"><![endif]-->
+              <div class="column right" dir="ltr">
+                <table width="100%">
+                  <tr>
+                    <td class="inner contents">
+                      You can create your own tables and make it responsive for
+                      mobile.<br />
+                      Keep your width always 100%. <br />You will need extra
+                      classes to deal with Outlook like <br />adding styling for
+                      <code>.ExternalClass & table</code>.
+                      <a href="#">Created by Sima</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
